@@ -9,3 +9,6 @@ docker compose up -d
 ```
 
 open [localhost](http://localhost) and enjoy your new experience with KAFKA
+
+LOGIN: user
+PASSWORD: password
