@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   angular-app:
-    image: kafkaetech/kcm-manager-ui:0.0.2
+    image: kafkaetech/kcm-manager-ui:0.0.3
     volumes:
       - ./runtime-config.json:/usr/share/nginx/html/runtime-config.json
     ports:
