@@ -10,7 +10,7 @@ services:
       - "80:80"
 
   kcm-manager-api:
-    image: kafkaetech/kcm-manager:0.60
+    image: kafkaetech/kcm-manager:latest
     environment:
       - KCM_DB_URL=jdbc:mysql://kcm-manager-db:3306/kcm_db
       - KCM_DB_USER=kcm_user
