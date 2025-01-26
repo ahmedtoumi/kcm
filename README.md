@@ -13,7 +13,7 @@ open [localhost](http://localhost) and enjoy your new experience with KAFKA
 **LOGIN**: user <br />
 **PASSWORD**: password
 
-<img src="https://github.com/user-attachments/assets/9293b2f6-d10d-43ee-beb7-7dede3e45acb" width="500" />
+<img src="documentation/images/login_kcm.png" width="500" />
 
-<img src="https://github.com/user-attachments/assets/5bd62e12-d5ea-4a46-9e45-bee6d772c97e" width="500" />
+<img src="documentation/images/kcm_cluster_overview.png" width="500" />
 
