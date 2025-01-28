@@ -49,3 +49,4 @@ Default Credentials: <br />
 
 <img src="documentation/images/kcm_cluster_overview.png" width="500" />
 
+### Check the Milestones and the Roadmap [here](https://github.com/ahmedtoumi/kcm/milestones?state=closed)
