@@ -19,6 +19,12 @@ services:
       - KCM_REDIS_DB_PORT=6379
       - KCM_REDIS_DB_PASSWORD=
       - KCM_REDIS_DB_NAME=0
+      - KCM_APP_FILES_PATH=/app/files
+      - KCM_JWT_PRIVATE_KEY=/app/jwt/private.pem
+      - KCM_JWT_PUBLIC_KEY=/app/jwt/public.pem
+    volumes:
+      - kcmdata:/app/files
+      - ./jwt:/app/jwt
     ports:
       - "8080:8080"
     depends_on:
@@ -59,3 +65,4 @@ services:
 volumes:
   redis_data:
   dbdata:
+  kcmdata:
