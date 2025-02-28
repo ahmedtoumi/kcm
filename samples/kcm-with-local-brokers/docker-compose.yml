@@ -20,11 +20,15 @@ services:
       - KCM_REDIS_DB_PASSWORD=
       - KCM_REDIS_DB_NAME=0
       - KCM_APP_FILES_PATH=/app/files
-      - KCM_JWT_PRIVATE_KEY=/app/jwt/private.pem
-      - KCM_JWT_PUBLIC_KEY=/app/jwt/public.pem
+      - KCM_JWT_PRIVATE_KEY=/app/certs/private.pem
+      - KCM_JWT_PUBLIC_KEY=/app/certs/public.pem
+      - KCM_ENCRYPT_PRIVATE_KEY=/app/certs/private.pem
+      - KCM_ENCRYPT_PUBLIC_KEY=/app/certs/public.pem
+      - KCM_JWT_TOKEN_VALIDITY=3600
+      - KCM_JWT_PERSISTENCE_MODE=JDBC
     volumes:
       - kcmdata:/app/files
-      - ./jwt:/app/jwt
+      - ./certificates:/app/certs
     ports:
       - "8080:8080"
     depends_on:
